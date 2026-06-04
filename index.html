@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="meta.description" data-i18n-attr="content" content="G:POS — ແພັກເກດຈຸດຂາຍຄົບຊຸດ ພ້ອມອຸປະກອນ ແລະ ຊອບແວສຳລັບທຸລະກິດສະໄໝ">
+  <title data-i18n="meta.title">G:POS — ລະບົບ POS ຄົບຊຸດ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Lao:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="6" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2"/>
+            <rect x="6" y="10" width="16" height="8" rx="1" fill="currentColor" opacity="0.3"/>
+            <circle cx="22" cy="8" r="2" fill="currentColor"/>
+          </svg>
+        </span>
+        G:POS
+      </a>
+
+      <button class="nav-toggle" id="navToggle" data-i18n="navToggle" data-i18n-attr="aria-label" aria-label="ເປີດ/ປິດເມນູ" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header__actions">
+        <div class="lang-switcher" role="group" data-i18n="langSwitcher" data-i18n-attr="aria-label" aria-label="ເລືອກພາສາ">
+          <button type="button" class="lang-switcher__btn is-active" data-lang="lo" aria-pressed="true">ລາວ</button>
+          <button type="button" class="lang-switcher__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <nav class="nav" id="nav">
+          <a href="#verticals" class="nav__link" data-i18n="nav.verticals">ແຂນທຸລະກິດ</a>
+          <a href="#hardware" class="nav__link" data-i18n="nav.hardware">ອຸປະກອນ</a>
+          <a href="#features" class="nav__link" data-i18n="nav.features">ຄຸນສົມບັດ</a>
+          <a href="#package" class="nav__link" data-i18n="nav.package">ແພັກເກດ</a>
+          <a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.getStarted">ເລີ່ມຕົ້ນ</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content animate-on-scroll">
+          <span class="hero__badge" data-i18n="hero.badge">ແພັກເກດ POS ຄົບຊຸດ</span>
+          <h1 class="hero__title" data-i18n="hero.title">ທຸກສິ່ງທີ່ທ່ານຕ້ອງການເພື່ອດຳເນີນຈຸດຂາຍ</h1>
+          <p class="hero__text" data-i18n="hero.text">
+            G:POS ລວມອຸປະກອນມືອາຊີບ ແລະ ຊອບແວທີ່ມີພະລັງເຂົ້າກັນເປັນລະບົບດຽວ — ເໝາະສຳລັບຮ້ານຄ້າ, ຮ້ານອາຫານ, ແລະ ທຸລະກິດທີ່ກຳລັງເຕີບໂຕ
+          </p>
+          <div class="hero__actions">
+            <a href="#package" class="btn btn--primary" data-i18n="hero.viewPackage">ເບິ່ງແພັກເກດ</a>
+            <a href="#hardware" class="btn btn--secondary" data-i18n="hero.exploreHardware">ສຳຫຼວດອຸປະກອນ</a>
+          </div>
+        </div>
+        <div class="hero__visual animate-on-scroll" aria-hidden="true">
+          <div class="hero__card hero__card--main">
+            <div class="hero__card-header">
+              <span class="hero__dot"></span>
+              <span class="hero__dot"></span>
+              <span class="hero__dot"></span>
+            </div>
+            <div class="hero__card-body">
+              <div class="hero__stat">
+                <span class="hero__stat-label" data-i18n="hero.todaysSales">ຍອດຂາຍມື້ນີ້</span>
+                <span class="hero__stat-value">$4,280.50</span>
+              </div>
+              <div class="hero__stat-row">
+                <div class="hero__mini-stat">
+                  <span data-i18n="hero.transactions">ທຸລະກຳ</span>
+                  <strong>142</strong>
+                </div>
+                <div class="hero__mini-stat">
+                  <span data-i18n="hero.itemsSold">ສິນຄ້າຂາຍແລ້ວ</span>
+                  <strong>387</strong>
+                </div>
+              </div>
+              <div class="hero__chart">
+                <div class="hero__bar" style="--h: 60%"></div>
+                <div class="hero__bar" style="--h: 85%"></div>
+                <div class="hero__bar" style="--h: 45%"></div>
+                <div class="hero__bar" style="--h: 70%"></div>
+                <div class="hero__bar" style="--h: 95%"></div>
+                <div class="hero__bar" style="--h: 55%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__card hero__card--float">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2L12.5 7.5L18 8.5L14 12.5L15 18L10 15.5L5 18L6 12.5L2 8.5L7.5 7.5L10 2Z" fill="currentColor"/>
+            </svg>
+            <span data-i18n="hero.paymentAccepted">ຮັບຊຳລະເງິນແລ້ວ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title" data-i18n="overview.title">ແພັກເກດດຽວ. ບໍ່ມີຄວາມຍຸ່ງຍາກ.</h2>
+          <p class="section-subtitle" data-i18n="overview.subtitle">
+            ຢຸດເຊື່ອມອຸປະກອນ ແລະ ຊອບແວຈາກຫຼາຍຜູ້ສະໜອງ. G:POS ສົ່ງມອບລະບົບຈຸດຂາຍທີ່ເຊື່ອມຕໍ່ກັນຄົບຊຸດ ໃຊ້ງານໄດ້ທັນທີ — ເພື່ອໃຫ້ທ່ານໂຟກັສແຕ່ບໍລິການລູກຄ້າ, ບໍ່ແມ່ນແກ້ໄຂເຕັກນິກ.
+          </p>
+        </div>
+        <div class="overview__grid">
+          <div class="overview__item animate-on-scroll">
+            <div class="overview__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L15 8.5L22 9.5L17 14.5L18 22L12 18.5L6 22L7 14.5L2 9.5L9 8.5L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 data-i18n="overview.plugPlay.title">ຕິດຕັ້ງງ່າຍ ໃຊ້ງານໄດ້ທັນທີ</h3>
+            <p data-i18n="overview.plugPlay.desc">ອຸປະກອນທີ່ຕັ້ງຄ່າແລ້ວ ເຊື່ອມຕໍ່ໄດ້ພາຍໃນບໍ່ກີ່ນາທີ ດ້ວຍຄູ່ມືຕິດຕັ້ງ.</p>
+          </div>
+          <div class="overview__item animate-on-scroll">
+            <div class="overview__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M3 9H21M9 3V21" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 data-i18n="overview.unified.title">ແພລດຟອມເຊື່ອມຕໍ່ກັນ</h3>
+            <p data-i18n="overview.unified.desc">ອຸປະກອນ ແລະ ຊອບແວອອກແບບມາຄູ່ກັນ ເພື່ອການດຳເນີນງານປະຈຳວັນທີ່ລຽບງ່າຍ.</p>
+          </div>
+          <div class="overview__item animate-on-scroll">
+            <div class="overview__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 data-i18n="overview.support.title">ສະໜັບສະໜູນ 24/7</h3>
+            <p data-i18n="overview.support.desc">ຊ່ວຍເຫຼືອຈາກຜູ້ຊ່ຽວຊານເມື່ອໃດກໍໄດ້ ເພື່ອໃຫ້ທຸລະກິດຂອງທ່ານດຳເນີນຕໍ່ໄປ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="verticals section" id="verticals">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label" data-i18n="verticals.label">ແຂນທຸລະກິດ</span>
+          <h2 class="section-title" data-i18n="verticals.title">G:POS ເໝາະກັບທຸລະກິດແບບໃດ?</h2>
+          <p class="section-subtitle" data-i18n="verticals.subtitle">
+            ເລືອກແຂນທຸລະກິດຂອງທ່ານເພື່ອເບິ່ງອຸປະກອນ ແລະ ຄຸນສົມບັດທີ່ເໝາະສົມທີ່ສຸດ.
+          </p>
+        </div>
+
+        <div class="verticals__wrapper animate-on-scroll">
+          <div class="verticals__tabs" role="tablist" aria-label="Business industries">
+            <button type="button" class="verticals__tab is-active" role="tab" id="tab-minimart" data-vertical="minimart" aria-selected="true" aria-controls="panel-minimart" data-i18n="verticals.minimart.tab">ຮ້ານຊື້ຂອງຍ່ອຍ</button>
+            <button type="button" class="verticals__tab" role="tab" id="tab-restaurant" data-vertical="restaurant" aria-selected="false" aria-controls="panel-restaurant" data-i18n="verticals.restaurant.tab">ຮ້ານອາຫານ</button>
+            <button type="button" class="verticals__tab" role="tab" id="tab-carparts" data-vertical="carparts" aria-selected="false" aria-controls="panel-carparts" data-i18n="verticals.carparts.tab">ຮ້ານອາໄຫຼ່ລົດ</button>
+          </div>
+
+          <div class="verticals__panels">
+            <div class="verticals__panel is-active" id="panel-minimart" role="tabpanel" aria-labelledby="tab-minimart" data-panel="minimart">
+              <p class="verticals__intro" data-i18n="verticals.minimart.desc">G:POS ຊ່ວຍຮ້ານຊື້ຂອງຍ່ອຍຂາຍໄວ ຈັດການສາງງ່າຍ ແລະ ຕິດຕາມຍອດຂາຍປະຈຳວັນ — ເໝາະສຳລັບຮ້ານເຄື່ອງໃຊ້, ຮ້ານຂາຍຂອງຊົນ, ແລະ mini-mart.</p>
+              <div class="verticals__details">
+                <div class="verticals__block">
+                  <h3 class="verticals__block-title" data-i18n="verticals.devicesTitle">ອຸປະກອນທີ່ແນະນຳ</h3>
+                  <ul class="verticals__list">
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.minimart.device1">ເຄື່ອງສະແກນບາໂຄດ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.minimart.device2">ເຄື່ອງພິມປ້າຍ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.minimart.device3">ເຄື່ອງພິມໃບເສັດ thermal</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.minimart.device4">ລິ້ນຊັກເກັບເງິນສົດ</span></li>
+                  </ul>
+                </div>
+                <div class="verticals__block">
+                  <h3 class="verticals__block-title" data-i18n="verticals.featuresTitle">ຄຸນສົມບັດຫຼັກ</h3>
+                  <ul class="verticals__list">
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.minimart.feature1">ຊຳລະດ້ວຍບາໂຄດໄວ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.minimart.feature2">ຕິດຕາມສາງແບບ real-time</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.minimart.feature3">ແຈ້ງເຕືອນສິນຄ້າໃກ້ໝົດ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.minimart.feature4">ລາຍງານຍອດຂາຍປະຈຳວັນ</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="verticals__panel" id="panel-restaurant" role="tabpanel" aria-labelledby="tab-restaurant" data-panel="restaurant" hidden>
+              <p class="verticals__intro" data-i18n="verticals.restaurant.desc">G:POS ຈັດການອໍເດີ, ສົ່ງໄປຄົວ, ແລະ ຊຳລະແບບແຍກບິນ — ເຮັດໃຫ້ຮ້ານອາຫານ ແລະ ຮ້ານກິນດື່ມດຳເນີນງານລຽບງ່າຍ.</p>
+              <div class="verticals__details">
+                <div class="verticals__block">
+                  <h3 class="verticals__block-title" data-i18n="verticals.devicesTitle">ອຸປະກອນທີ່ແນະນຳ</h3>
+                  <ul class="verticals__list">
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.restaurant.device1">ເຄື່ອງ POS ຈໍສຳຜັດ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.restaurant.device2">ຈໍສະແດງຄົວ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.restaurant.device3">ເຄື່ອງພິມໃບເສັດ thermal</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.restaurant.device4">ຈໍສະແດງຜົນຝັ່ງລູກຄ້າ</span></li>
+                  </ul>
+                </div>
+                <div class="verticals__block">
+                  <h3 class="verticals__block-title" data-i18n="verticals.featuresTitle">ຄຸນສົມບັດຫຼັກ</h3>
+                  <ul class="verticals__list">
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.restaurant.feature1">ຈັດການໂຕະ ແລະ ອໍເດີ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.restaurant.feature2">ສົ່ງອໍເດີໄປຄົວອັດຕະໂນມັດ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.restaurant.feature3">ຈັດການເມນູ ແລະ ລາຄາ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.restaurant.feature4">ແຍກບິນ ແລະ ຊຳລະຫຼາຍວິທີ</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="verticals__panel" id="panel-carparts" role="tabpanel" aria-labelledby="tab-carparts" data-panel="carparts" hidden>
+              <p class="verticals__intro" data-i18n="verticals.carparts.desc">G:POS ຊ່ວຍຮ້ານອາໄຫຼ່ລົດຄົ້ນຫາຊິ້ນສ່ວນໄວ, ຈັດການ SKU ແລະ ຕິດຕາມການເຕີມສິນຄ້າຈາກຜູ້ສະໜອງ.</p>
+              <div class="verticals__details">
+                <div class="verticals__block">
+                  <h3 class="verticals__block-title" data-i18n="verticals.devicesTitle">ອຸປະກອນທີ່ແນະນຳ</h3>
+                  <ul class="verticals__list">
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.carparts.device1">ເຄື່ອງສະແກນບາໂຄດ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.carparts.device2">ເຄື່ອງພິມປ້າຍ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.carparts.device3">ເຄື່ອງ POS ຈໍສຳຜັດ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.carparts.device4">ເຄື່ອງພິມໃບເສັດ thermal</span></li>
+                  </ul>
+                </div>
+                <div class="verticals__block">
+                  <h3 class="verticals__block-title" data-i18n="verticals.featuresTitle">ຄຸນສົມບັດຫຼັກ</h3>
+                  <ul class="verticals__list">
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.carparts.feature1">ຄົ້ນຫາເລກຊິ້ນສ່ວນໄວ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.carparts.feature2">ຈັດການສາງຕາມ SKU</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.carparts.feature3">ກອງຕາມໝວດໝູ່ສິນຄ້າ</span></li>
+                    <li><span class="verticals__check" aria-hidden="true">✓</span><span data-i18n="verticals.carparts.feature4">ຕິດຕາມການເຕີມສິນຄ້າຈາກຜູ້ສະໜອງ</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hardware section" id="hardware">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label" data-i18n="hardware.label">ອຸປະກອນ</span>
+          <h2 class="section-title" data-i18n="hardware.title">ອຸປະກອນທີ່ລວມໃນແພັກເກດ</h2>
+          <p class="section-subtitle" data-i18n="hardware.subtitle">
+            ອຸປະກອນລະດັບມືອາຊີບ ທີ່ເລືອກມາເພື່ອຄວາມໜຶ່ງໃຈ, ຄວາມໄວ, ແລະ ຄວາມເຂົ້າກັນໄດ້ກັບຊອບແວ G:POS
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="device-card animate-on-scroll">
+            <div class="device-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="6" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                <rect x="8" y="10" width="16" height="8" rx="1" fill="currentColor" opacity="0.2"/>
+                <path d="M12 26H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 22V26" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="device-card__title" data-i18n="device.terminal.title">ເຄື່ອງ POS ຈໍສຳຜັດ</h3>
+            <p class="device-card__desc" data-i18n="device.terminal.desc">ຈໍ capacitive 15 ນິ້ວ ພ້ອມຊິບເຮັດວຽກໄວ ສຳລັບການຊຳລະ ແລະ ຮັບອໍເດີລຽບງ່າຍ.</p>
+          </article>
+
+          <article class="device-card animate-on-scroll">
+            <div class="device-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="4" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 22H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M14 18V22M18 18V22" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 10H24M8 14H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="device-card__title" data-i18n="device.printer.title">ເຄື່ອງພິມໃບເສັດ Thermal</h3>
+            <p class="device-card__desc" data-i18n="device.printer.desc">ເຄື່ອງພິມ 80mm ໄວສູງ ສຳລັບໃບເສັດ, ໃບສັ່ງຄົວ, ແລະ ລາຍງານປະຈຳວັນ.</p>
+          </article>
+
+          <article class="device-card animate-on-scroll">
+            <div class="device-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="12" width="24" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 12V8C8 6.89543 8.89543 6 10 6H22C23.1046 6 24 6.89543 24 8V12" stroke="currentColor" stroke-width="2"/>
+                <circle cx="16" cy="19" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="device-card__title" data-i18n="device.drawer.title">ລິ້ນຊັກເກັບເງິນສົດ</h3>
+            <p class="device-card__desc" data-i18n="device.drawer.desc">ລິ້ນຊັກເຫຼັກແຂງ ເປີດອັດຕະໂນມັດເມື່ອຂາຍ ແລະ ມີກຸນແຈລັອກປອດໄພ.</p>
+          </article>
+
+          <article class="device-card animate-on-scroll">
+            <div class="device-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 16H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M6 12H26M6 20H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="device-card__title" data-i18n="device.scanner.title">ເຄື່ອງສະແກນບາໂຄດ</h3>
+            <p class="device-card__desc" data-i18n="device.scanner.desc">ເຄື່ອງສະແກນ 1D/2D ມືຖື ສຳລັບຄົ້ນຫາສິນຄ້າ ແລະ ສະແກນສາງໄວ.</p>
+          </article>
+
+          <article class="device-card animate-on-scroll">
+            <div class="device-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="4" width="12" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                <rect x="6" y="24" width="20" height="4" rx="1" stroke="currentColor" stroke-width="2"/>
+                <path d="M13 10H19M13 14H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="device-card__title" data-i18n="device.display.title">ຈໍສະແດງຜົນຝັ່ງລູກຄ້າ</h3>
+            <p class="device-card__desc" data-i18n="device.display.desc">ຈໍຕັ້ງເສົາ ຫຼື ວາງເທິງເຄົາເຕີ ສະແດງລາຄາ, ໂປຣໂມຊັ່ນ, ແລະ ຍອດຊຳລະ.</p>
+          </article>
+
+          <article class="device-card animate-on-scroll">
+            <div class="device-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="6" width="16" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 12H20M12 16H20M12 20H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 10H24" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="device-card__title" data-i18n="device.label.title">ເຄື່ອງພິມປ້າຍ</h3>
+            <p class="device-card__desc" data-i18n="device.label.desc">ເຄື່ອງພິມປ້າຍ thermal ຂະໜາດກະທັດຮັດ ສຳລັບປ້າຍລາຄາ, ຊັ້ນວາງ, ແລະ ບາໂຄດ.</p>
+          </article>
+
+          <article class="device-card animate-on-scroll">
+            <div class="device-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="6" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 10H12V18H8V10Z" fill="currentColor" opacity="0.3"/>
+                <path d="M14 10H18V14H14V10Z" fill="currentColor" opacity="0.5"/>
+                <path d="M20 10H24V18H20V10Z" fill="currentColor" opacity="0.3"/>
+                <path d="M14 16H18V18H14V16Z" fill="currentColor" opacity="0.5"/>
+              </svg>
+            </div>
+            <h3 class="device-card__title" data-i18n="device.kitchen.title">ລະບົບຈໍສະແດງຄົວ</h3>
+            <p class="device-card__desc" data-i18n="device.kitchen.desc">ຈໍຕິດຜີວ ສົ່ງອໍເດີໄປຄົວ ຫຼື ຈຸດກະກຽມແບບ real-time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label" data-i18n="features.label">ຊອບແວ</span>
+          <h2 class="section-title" data-i18n="features.title">ຄຸນສົມບັດທີ່ມີພະລັງພ້ອມໃຊ້</h2>
+          <p class="section-subtitle" data-i18n="features.subtitle">
+            ຊອບແວ G:POS ຈັດການທຸກດ້ານຂອງທຸລະກິດ — ຕັ້ງແຕ່ການຂາຍຄັ້ງທຳອິດ ຈົນເຖິງລາຍງານປະຈຳວັນ.
+          </p>
+        </div>
+
+        <div class="features__groups">
+          <div class="feature-group animate-on-scroll">
+            <h3 class="feature-group__title">
+              <span class="feature-group__icon feature-group__icon--sales">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 10H17M17 10L12 5M17 10L12 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span data-i18n="features.sales.group">ການຂາຍ</span>
+            </h3>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.sales.checkout.title">ຊຳລະໄວ</strong>
+                  <p data-i18n="features.sales.checkout.desc">ໜ້າຈໍທີ່ອອກແບບມາເພື່ອທຸລະກຳໄວ ແລະ ຄິວສັ້ນລົງ.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.sales.payment.title">ຮອງຮັບຫຼາຍວິທີຊຳລະ</strong>
+                  <p data-i18n="features.sales.payment.desc">ຮັບເງິນສົດ, ບັດເຄຣດິດ/ເດບິດ, ແລະ mobile wallet ໃນຂັ້ນຕອນດຽວ.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.sales.discounts.title">ສ່ວນຫຼຸດ ແລະ ໂປຣໂມຊັ່ນ</strong>
+                  <p data-i18n="features.sales.discounts.desc">ໃຊ້ສ່ວນຫຼຸດເປີເຊັນ, ຄົງທີ່, ຫຼື ແພັກເກັດ ຕອນຊຳລະ.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.sales.returns.title">ຄືນສິນຄ້າ ແລະ ຄືນເງິນ</strong>
+                  <p data-i18n="features.sales.returns.desc">ດຳເນີນການຄືນສິນຄ້າພ້ອມບັນທຶກກວດສອບ ແລະ ຄົ້ນຫາໃບເສັດ.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feature-group animate-on-scroll">
+            <h3 class="feature-group__title">
+              <span class="feature-group__icon feature-group__icon--inventory">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M3 7H17M7 3V17" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+              <span data-i18n="features.inventory.group">ສາງສິນຄ້າ</span>
+            </h3>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.inventory.stock.title">ຕິດຕາມສາງແບບ Real-Time</strong>
+                  <p data-i18n="features.inventory.stock.desc">ສາງອັບເດດອັດຕະໂນມັດທຸກຄັ້ງທີ່ຂາຍ ແລະ ເຕີມສິນຄ້າ.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.inventory.alerts.title">ແຈ້ງເຕືອນສິນຄ້າໃກ້ໝົດ</strong>
+                  <p data-i18n="features.inventory.alerts.desc">ໄດ້ຮັບແຈ້ງເຕືອນເມື່ອສິນຄ້າຕ່ຳກວ່າລະດັບທີ່ກຳນົດ.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.inventory.barcode.title">ເຊື່ອມຕໍ່ບາໂຄດ</strong>
+                  <p data-i18n="features.inventory.barcode.desc">ສະແກນສິນຄ້າເພື່ອເພີ່ມ, ຂາຍ, ແລະ ຈັດການສາງໄດ້ງ່າຍ.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feature-group animate-on-scroll">
+            <h3 class="feature-group__title">
+              <span class="feature-group__icon feature-group__icon--management">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="6" r="3" stroke="currentColor" stroke-width="2"/>
+                  <path d="M4 18C4 14.6863 6.68629 12 10 12C13.3137 12 16 14.6863 16 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span data-i18n="features.management.group">ການຈັດການ</span>
+            </h3>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.management.customers.title">ໂປຣໄຟລ໌ລູກຄ້າ</strong>
+                  <p data-i18n="features.management.customers.desc">ຕິດຕາມປະຫວັດການຊື້, ຄວາມມັກ, ແລະ ຄະແນນສະສົມ.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.management.roles.title">ບົດບາດ ແລະ ສິດພະນັກງານ</strong>
+                  <p data-i18n="features.management.roles.desc">ຄວບຄຸມສິດເຂົ້າເຖິງສຳລັບຜູ້ຈັດການ, ແຄຊເຊຍ, ແລະ ພະນັກງານ.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.management.multistore.title">ຊິງຄ໌ຫຼາຍສາຂາ</strong>
+                  <p data-i18n="features.management.multistore.desc">ຈັດການສາງ ແລະ ຍອດຂາຍຫຼາຍສະຖານທີ່ຈາກສູນກາງ.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feature-group animate-on-scroll">
+            <h3 class="feature-group__title">
+              <span class="feature-group__icon feature-group__icon--insights">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 16L8 10L11 13L16 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 17H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span data-i18n="features.insights.group">ຂໍ້ມູນເຊິງລຶກ</span>
+            </h3>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.insights.reports.title">ລາຍງານ ແລະ ວິເຄາະຍອດຂາຍ</strong>
+                  <p data-i18n="features.insights.reports.desc">Dashboard ສະແດງຜົນປະຈຳວັນ, ອາທິດ, ແລະ ເດືອນ.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.insights.tax.title">ຕັ້ງຄ່າພາສີ</strong>
+                  <p data-i18n="features.insights.tax.desc">ກົດພາສີທີ່ປັບແຕ່ງໄດ້ ສຳລັບສິນຄ້າ ແລະ ພື້ນທີ່ຕ່າງໆ.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item__check" aria-hidden="true">✓</span>
+                <div>
+                  <strong data-i18n="features.insights.cloud.title">ສຳຮອງ Cloud ແລະ ໂໝດ Offline</strong>
+                  <p data-i18n="features.insights.cloud.desc">ຂໍ້ມູນຊິງຄ໌ cloud ພ້ອມຂາຍໄດ້ແມ້ອິນເຕີເນັດຂັດຂ້ອງ.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="package section" id="package">
+      <div class="container">
+        <div class="package__inner animate-on-scroll">
+          <div class="package__content">
+            <span class="section-label" data-i18n="package.label">ສິ່ງທີ່ລວມໃນແພັກເກດ</span>
+            <h2 class="section-title" data-i18n="package.title">ແພັກເກດ G:POS ຄົບຊຸດ</h2>
+            <p class="section-subtitle" data-i18n="package.subtitle">
+              ທຸກຢ່າງຂ້າງເທິງ — ອຸປະກອນ, ຊອບແວ, ຕິດຕັ້ງ, ແລະ ສະໜັບສະໜູນ — ລວມເປັນແພັກເກດພ້ອມໃຊ້ງານ.
+            </p>
+            <ul class="package__checklist">
+              <li>
+                <span class="package__check" aria-hidden="true">✓</span>
+                <span data-i18n="package.item1">ເຄື່ອງ POS ຈໍສຳຜັດ ພ້ອມຂາຕັ້ງ</span>
+              </li>
+              <li>
+                <span class="package__check" aria-hidden="true">✓</span>
+                <span data-i18n="package.item2">ເຄື່ອງພິມໃບເສັດ thermal ແລະ ລິ້ນຊັກເງິນສົດ</span>
+              </li>
+              <li>
+                <span class="package__check" aria-hidden="true">✓</span>
+                <span data-i18n="package.item3">ເຄື່ອງສະແກນບາໂຄດ ແລະ ຈໍສະແດງຜົນລູກຄ້າ</span>
+              </li>
+              <li>
+                <span class="package__check" aria-hidden="true">✓</span>
+                <span data-i18n="package.item4">ເຄື່ອງພິມປ້າຍ ແລະ ຈໍຄົວ (ໂມດູນເລືອກໄດ້)</span>
+              </li>
+              <li>
+                <span class="package__check" aria-hidden="true">✓</span>
+                <span data-i18n="package.item5">ໃບອະນຸຍາດຊອບແວ G:POS ເຕັມຮູບແບບ</span>
+              </li>
+              <li>
+                <span class="package__check" aria-hidden="true">✓</span>
+                <span data-i18n="package.item6">ຕິດຕັ້ງໜ້າສະຖານທີ່ ແລະ ຝຶກອົບຮົມພະນັກງານ</span>
+              </li>
+              <li>
+                <span class="package__check" aria-hidden="true">✓</span>
+                <span data-i18n="package.item7">ສະໜັບສະໜູນເຕັກນິກ 24/7</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary" data-i18n="package.requestDemo">ຂໍເບິ່ງສາທິດ</a>
+          </div>
+          <div class="package__visual">
+            <div class="package__box">
+              <div class="package__box-header" data-i18n="package.boxHeader">G:POS</div>
+              <div class="package__box-items">
+                <div class="package__box-item">
+                  <span class="package__box-dot package__box-dot--hardware"></span>
+                  <span data-i18n="package.boxHardware">ອຸປະກອນ 7 ລາຍການ</span>
+                </div>
+                <div class="package__box-item">
+                  <span class="package__box-dot package__box-dot--software"></span>
+                  <span data-i18n="package.boxSoftware">ຄຸນສົມບັດຊອບແວ 13+</span>
+                </div>
+                <div class="package__box-item">
+                  <span class="package__box-dot package__box-dot--support"></span>
+                  <span data-i18n="package.boxSupport">ຕິດຕັ້ງ ແລະ ສະໜັບສະໜູນ 24/7</span>
+                </div>
+              </div>
+              <div class="package__box-footer" data-i18n="package.boxFooter">
+                ພ້ອມນຳໃຊ້ໃນຮ້ານຂອງທ່ານ
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section" id="contact">
+      <div class="container">
+        <div class="cta__inner animate-on-scroll">
+          <h2 class="cta__title" data-i18n="cta.title">ພ້ອມອັບເກຣດຈຸດຂາຍຂອງທ່ານບໍ?</h2>
+          <p class="cta__text" data-i18n="cta.text">ຕິດຕໍ່ພວກເຮົາເພື່ອເບິ່ງສາທິດຟຣີ ແລະ ເຫັນວ່າ G:POS ຈະປ່ຽນແປງການດຳເນີນທຸລະກິດຂອງທ່ານໄດ້ແນວໃດ.</p>
+          <div class="cta__actions">
+            <a href="mailto:hello@gpos.example" class="btn btn--primary btn--large" data-i18n="cta.contact">ຕິດຕໍ່ພວກເຮົາ</a>
+            <a href="#hardware" class="btn btn--ghost btn--large" data-i18n="cta.reviewHardware">ກັບໄປເບິ່ງອຸປະກອນ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer">
+          <span class="logo__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="6" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2"/>
+              <rect x="6" y="10" width="16" height="8" rx="1" fill="currentColor" opacity="0.3"/>
+              <circle cx="22" cy="8" r="2" fill="currentColor"/>
+            </svg>
+          </span>
+          G:POS
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">ແພັກເກດຈຸດຂາຍຄົບຊຸດສຳລັບທຸລະກິດສະໄໝ</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#verticals" data-i18n="nav.verticals">ແຂນທຸລະກິດ</a>
+        <a href="#hardware" data-i18n="nav.hardware">ອຸປະກອນ</a>
+        <a href="#features" data-i18n="nav.features">ຄຸນສົມບັດ</a>
+        <a href="#package" data-i18n="nav.package">ແພັກເກດ</a>
+        <a href="#contact" data-i18n="nav.contact">ຕິດຕໍ່</a>
+      </nav>
+      <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 G:POS. ສະຫງວນລິຂະສິດ.</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
