@@ -2,6 +2,8 @@ window.TRANSLATIONS = {
   lo: {
     "meta.title": "G:POS — ລະບົບ POS ຄົບຊຸດ",
     "meta.description": "G:POS — ແພັກເກດຈຸດຂາຍຄົບຊຸດ ພ້ອມອຸປະກອນ ແລະ ຊອບແວສຳລັບທຸລະກິດສະໄໝ",
+    "ecom.meta.title": "G:POS — ແພັກເກດ E-Commerce",
+    "ecom.meta.description": "ແພັກເກດ E-Commerce ຂອງ G:POS ພ້ອມເປີດຮ້ານອອນລາຍ, ທາງເລືອກ Hostinger, ຄ່າບຳລຸງຮັກສາ, ແລະ ລະບົບຕິດຕາມອໍເດີ.",
 
     "nav.hardware": "ອຸປະກອນ",
     "nav.features": "ຄຸນສົມບັດ",
@@ -209,6 +211,8 @@ window.TRANSLATIONS = {
   en: {
     "meta.title": "G:POS — Complete POS Solution",
     "meta.description": "G:POS — a complete point-of-sale solution with hardware and software for modern businesses.",
+    "ecom.meta.title": "G:POS — E-Commerce Package",
+    "ecom.meta.description": "G:POS ecommerce package with online store setup, Hostinger hosting options, maintenance pricing, and order tracking flow.",
 
     "nav.hardware": "Hardware",
     "nav.features": "Features",
