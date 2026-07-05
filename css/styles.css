@@ -1077,7 +1077,8 @@ ul {
 
 .ecommerce__eyebrow {
   display: inline-flex;
-  width: fit-content;
+  width: auto;
+  align-self: flex-start;
   padding: 8px 14px;
   font-size: 0.8125rem;
   font-weight: 700;
@@ -1498,8 +1499,8 @@ ul {
   }
 
   .package__content .btn {
-    display: flex;
-    width: fit-content;
+    display: inline-flex;
+    width: auto;
     margin: 0 auto;
   }
 
@@ -1542,6 +1543,7 @@ ul {
     padding: 16px 24px 24px;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
     box-shadow: var(--shadow-md);
     transform: translateY(-100%);
